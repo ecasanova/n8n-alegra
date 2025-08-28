@@ -1,5 +1,5 @@
 
-# 8n-nodes-alegra
+# n8n-nodes-alegra
 
 > Nodo personalizado de n8n para integración con la API de Alegra.
 
