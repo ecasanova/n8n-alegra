@@ -77,11 +77,11 @@ export class Alegra implements INodeType {
       }
 
       const options: IHttpRequestOptions = {
-        method: 'POST',
+        method: "POST",
         url: url,
         body: data,
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         auth: {
           username: credentials.email as string,
@@ -90,7 +90,7 @@ export class Alegra implements INodeType {
         json: true,
       };
 
-      const response = await this.httpRequest(options);
+      const response = await this.helpers.request(options);
       returnData.push({ json: response });
     }
 
