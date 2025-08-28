@@ -48,7 +48,7 @@ Este paquete permite conectar n8n con la API de Alegra para crear facturas y reg
 
 ## Pruebas y desarrollo
 
-+Puedes probar el nodo localmente en tu instancia de n8n. 
++Puedes probar el nodo localmente en tu instancia de n8n.
 
 ## Licensia
 
