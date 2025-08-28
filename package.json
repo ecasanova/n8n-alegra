@@ -28,6 +28,7 @@
     "typescript": "^5.0.0"
   },
   "files": [
-    "dist"
+    "dist",
+    "alegra.svg"
   ]
 }
