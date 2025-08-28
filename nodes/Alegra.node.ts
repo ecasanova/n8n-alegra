@@ -4,9 +4,8 @@ import {
   INodeType,
   INodeTypeDescription,
   NodeConnectionType,
+  IHttpRequestOptions,
 } from "n8n-workflow";
-
-import axios from "axios";
 
 export class Alegra implements INodeType {
   description: INodeTypeDescription = {
