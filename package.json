@@ -1,5 +1,5 @@
 {
-  "name": "8n-nodes-alegra",
+  "name": "n8n-nodes-alegra",
   "version": "0.1.0",
   "description": "n8n custom node for Alegra API integration",
   "main": "dist/index.js",
