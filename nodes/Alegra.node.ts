@@ -76,18 +76,22 @@ export class Alegra implements INodeType {
         throw new Error("Unsupported resource/operation");
       }
 
-      const auth = Buffer.from(
-        `${credentials.email}:${credentials.apiKey}`
-      ).toString("base64");
-
-      const response = await axios.post(url, data, {
+      const options: IHttpRequestOptions = {
+        method: 'POST',
+        url: url,
+        body: data,
         headers: {
-          Authorization: `Basic ${auth}`,
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
-      });
+        auth: {
+          username: credentials.email as string,
+          password: credentials.apiKey as string,
+        },
+        json: true,
+      };
 
-      returnData.push({ json: response.data });
+      const response = await this.httpRequest(options);
+      returnData.push({ json: response });
     }
 
     return [returnData];
