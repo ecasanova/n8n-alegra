@@ -16,7 +16,7 @@
     "api",
     "n8n-community-node-package"
   ],
-  "author": "",
+  "author": "ecasanova",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
