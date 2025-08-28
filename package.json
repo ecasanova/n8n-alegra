@@ -31,5 +31,13 @@
   "files": [
     "dist",
     "alegra.svg"
-  ]
+  ],
+  "n8n": {
+    "n8n-nodes": {
+      "Alegra": "dist/nodes/Alegra.node.js"
+    },
+    "credentials": {
+      "alegraApi": "dist/credentials/AlegraApi.credentials.js"
+    }
+  }
 }
