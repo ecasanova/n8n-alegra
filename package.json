@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-alegra",
+  "name": "8n-nodes-alegra",
   "version": "0.1.0",
   "description": "n8n custom node for Alegra API integration",
   "main": "dist/index.js",
@@ -9,7 +9,12 @@
     "lint": "eslint . --ext .ts",
     "prepare": "npm run build"
   },
-  "keywords": ["n8n", "node", "alegra", "api"],
+  "keywords": [
+    "n8n",
+    "node",
+    "alegra",
+    "api"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
@@ -17,8 +22,10 @@
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "typescript": "^5.0.0",
-    "eslint": "^8.0.0"
+    "eslint": "^8.0.0",
+    "n8n-core": "^1.14.1",
+    "n8n-workflow": "^1.82.0",
+    "typescript": "^5.0.0"
   },
   "files": [
     "dist"

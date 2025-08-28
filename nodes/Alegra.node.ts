@@ -1,8 +1,10 @@
+
 import {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
+	NodeConnectionType
 } from 'n8n-workflow';
 
 import axios from 'axios';
@@ -20,8 +22,8 @@ export class Alegra implements INodeType {
 			name: 'Alegra',
 			color: '#00b96b',
 		},
-		inputs: ['main'],
-		outputs: ['main'],
+		inputs: [NodeConnectionType.Main],
+		outputs: [NodeConnectionType.Main],
 		credentials: [
 			{
 				name: 'alegraApi',
